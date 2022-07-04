@@ -18,8 +18,8 @@ Set](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Sm
 An immutable copy is provided by Coursera:
 <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>.
 
-The data can also be found in this repository in the folder `/data-raw`.
-The data has been manually downloaded.
+The raw data can also be found in this repository in the folder
+`data-raw/`. The data has been manually downloaded.
 
 ### Tidy data set
 
@@ -54,8 +54,12 @@ The final result of this data tidying workflow is data set —
     and `activity` (type of activity ).
 -   Each column corresponds to one variable which can be divided in
     three groups:
-    -   Group 1: columns `subject` and `activity`
+    -   Group 1: metadata columns `subject` and `activity` (used for the
+        summarizing groups)
     -   Group 2: metadata columns about the measurements’ average:
         `domain`, `acc_component`, `motion`, `derivative`, `axis` and
         `statistic`.
     -   Group 3: column `value`, i.e. the measurements’ average.
+
+For details about the meaning of each individual variable and units see
+the code book (CodeBook.md).
